@@ -9,7 +9,7 @@
 using namespace std;
 
 void playerRenderer(SDL_Renderer* renderer, SDL_Rect player, int x, int y, int scale, vector<int> tailX, vector<int> tailY, int tailLength){
-    SDL_SetRenderDrawColor(render, 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     player.w = scale;
     player.h = scale;
 
@@ -30,7 +30,7 @@ void playerRenderer(SDL_Renderer* renderer, SDL_Rect player, int x, int y, int s
 
 void foodRenderer(SDL_Renderer* renderer, SDL_Rect food){
     SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-    SDL_RenderFillRect(render, &food);
+    SDL_RenderFillRect(renderer, &food);
 
 }
 
