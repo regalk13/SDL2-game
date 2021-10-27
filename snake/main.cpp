@@ -15,8 +15,8 @@ void playerRenderer(SDL_Renderer* renderer, SDL_Rect player, int x, int y, int s
 
 
     for(int i = 0; i < tailLength; i++){
-        player.x = tailX[1];
-        player.y = tailY[1];
+        player.x = tailX[i];
+        player.y = tailY[i];
         SDL_RenderFillRect(renderer, &player);
 
     }
@@ -483,7 +483,9 @@ int main(int argc, char* argv[]){
         SDL_RenderDrawLine(renderer, 0, 24*24, 24 * 24, 24 * 24);
 		SDL_RenderDrawLine(renderer, 24*24, 24 * 24, 24*24, 0);
 		SDL_RenderDrawLine(renderer, 24*24, 0, 0, 0);
-		SDL_RenderPresent(renderer);
+		
+
+        SDL_RenderPresent(renderer);
 
 		SDL_SetRenderDrawColor(renderer, 105, 105, 105, 255);
 		SDL_RenderClear(renderer);
