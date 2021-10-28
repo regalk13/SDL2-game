@@ -1,9 +1,9 @@
-#include<iostream>
-#include<vector>
-#include<string>
-#include<ctime>
-#include<SDL2/SDL.h>
-#include<SDL2/SDL_ttf.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <ctime>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 
 
 using namespace std;
